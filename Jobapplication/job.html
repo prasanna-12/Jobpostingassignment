@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            p    {color:green;}
+            
+  
+            </style>
+      </head>
+    
+        <body>
+            <form action="/localhost:8001/v1jobs/job" style="border:1px solid #ccc" method="post">
+                <div class="container">
+                    <h4>Post job</h4>
+                    <p>Basic Details</p>
+                    <hr>
+
+
+       
+
+
+                
+          
+              <label for="jtitle">Job Title*</label>
+              <div class="clf"></div>
+              <input type="text" id="jtitle" name="jobtitle" placeholder="Write a title that approximately describes your job" required>
+                </div>
+
+          <div class="clfi">
+              <label for="lname">Location*</label>
+              <div class="clfkk">
+              <input type="text" id="lname" name="location" placeholder="+Add Location"required>
+            </div>
+          </div>
+
+          <div class="clfix">
+              <label for="experience">Years of experience*</label>
+          </div>
+          <div class="eoe">
+              <select id="experience" name="experience" required>
+                <option value="min">Select min</option>
+                <option value="min0">0</option>
+                <option value="min1">1</option>
+                <option value="min2">2</option>
+                <option value="min3">3</option>
+                <option value="min4">4</option>
+                <option value="min5">5</option>
+              </select>
+              <select id="experience" name="experience"required>
+                <option value="min" required>Select max</option>
+                <option value="min0">0</option>
+                <option value="min1">1</option>
+                <option value="min2">2</option>
+                <option value="min3">3</option>
+                <option value="min4">4</option>
+                <option value="min5">5</option>
+              </select>
+          </div>
+              <label for="subject">Job Description*</label>
+              <textarea id="subject" name="subject" placeholder="Describe the role and resposibilities,skills required for the job and help the candidates understand the role better" style="height:200px" required></textarea>
+              <p>Targeting</p>
+                    <hr>
+
+
+
+                    <div class="clfixii">
+                        <label for="cato">Category*</label>
+                    </div>
+                    <div class="categ">
+                        <select id="cato" name="catog" required>
+                          <option value="sel">Select</option>
+                          <option value="sde">Software developer</option>
+                          <option value="fde">Frontend developer</option>
+                          <option value="bkd">Backend developer</option>
+                          
+                        </select>
+                        <label for="func">Functional Area*</label>
+                        <select id="func" name="funct" required>
+                          <option value="se">Select</option>
+                          <option value="rea">React Js</option>
+                          <option value="htm">HTML</option>
+                          <option value="css">CSS</option>
+                          
+                        </select>
+                    </div>
+
+
+
+
+                    <div class="clfixhh" required>
+                        <label for="grad">Graduating years*</label>
+                    </div>
+                        <div class="graddd">
+                        <select id="grad" name="gradu" >
+                          <option value="min">Min Batch</option>
+                          <option value="mi0">2015</option>
+                          <option value="mi1">2016</option>
+                          <option value="mi2">2017</option>
+                          <option value="mi3">2018</option>
+                          <option value="mi4">2019</option>
+                          <option value="mi5">2020</option>
+                        </select>
+                        <select id="grad" name="gradu" required>
+                          <option value="max" required>Max Batch</option>
+                          <option value="m1">2015</option>
+                          <option value="m2">2016</option>
+                          <option value="m3">2017</option>
+                          <option value="m4">2018</option>
+                          <option value="m5">2019</option>
+                          <option value="m6">2020</option>
+                        </select>
+                    </div>
+
+
+
+
+
+
+              <div class="clf">
+              <label for="tag">Tags</label>
+              </div>
+              <div class="clffs">
+              <input type="text" id="tag" name="tags" placeholder="+Add job tag">
+              </div>
+              
+              <div class="clearfix">
+                <button style=background-color:green; type="submit" class="pjob"> Post job</button>
+                <button style="background-color:white; border-color:green; color:green"type="button" class="pjobbtn">Post job and add another job</button>
+                <button style="background-color:white; border-color:white; color:green"type="button" class="Cancelbtn">Cancel</button>
+              </div>
+          
+            </form>
+          </div>
+        </body>
+</html>
